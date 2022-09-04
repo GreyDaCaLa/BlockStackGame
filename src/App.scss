@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+
+html, body, #root, .App, .GameApp {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+}
+
+body {
+  background: darkgrey;
+  position: fixed;
+}
+
+
+
+
+.InGamePopUpcontainer {
+  position: absolute;
+  z-index: 10;
+  width: 100vw;
+  top: 10vh;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.GameOverPopUpmessage {
+  padding: 0px 20px 20px 20px;
+  background-color: red;
+  color: white;
+  font-size: 100px;
+  font-weight: bolder;
+  line-height: 90px;
+  width: fit-content;
+  text-decoration: underline;
+
+}
+
+.RunningGameScorePopUpmessage {
+  padding: 0px 20px 20px 20px;
+  background-color: black;
+  color: white;
+  font-size: 100px;
+  font-weight: bolder;
+  line-height: 90px;
+  width: fit-content;
+  text-decoration: underline;
+
+}
+
+.TotalScoremessage{
+  background-color: aquamarine;
+  font-weight: bold;
+}
+
+.GoHomeButton{
+  background-color: burlywood;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  :hover{
+    color: black;
+  }
+}
+
+.Landingmessage {
+  padding: 0px 20px 20px 20px;
+  background-color: red;
+  color: white;
+  font-size: 100px;
+  font-weight: bolder;
+  line-height: 90px;
+  width: fit-content;
+  text-decoration: underline;
+
+}
+
+.GoPlayButton{
+  background-color: burlywood;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+
+  :hover{
+    color:black
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  html, body, #root, .App, .GameApp {
+    background-color: black;
+  }
+
+  .GameOverPopUpmessage{
+    padding: 0px 10px 10px 10px;
+    font-size: 50px;
+
+  }
+
+  .Landingmessage{
+    padding: 0px 10px 10px 10px;
+    font-size: 50px;
+  }
+}
+
+
+
+
+
